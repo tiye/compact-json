@@ -1,6 +1,8 @@
 
 # string, array, json, number, else
 
+support_types = ["number", "string", "array", "object"]
+
 str = (x) ->
   JSON.stringify x
 
@@ -30,18 +32,23 @@ render = (content) ->
     buffer += value
 
   append = (value) ->
-    buffer += (str value)
+    res = str value
+    if res.length > 30
+      res = res[..10] + "...\"\t[too long]"
+    write res
     newline()
 
   newline = ->
     buffer += "\n"
 
   append_item = (indent, item) ->
+    return unless (type item) in support_types
     jumps indent
     write "- "
     make indent, item, "array"
 
   append_pair = (indent, key, value) ->
+    return unless (type value) in support_types
     jumps indent
     if key.match /[\w\d-]+/
       write key
@@ -55,7 +62,10 @@ render = (content) ->
       when "array"
         if outer is "object"
           indent -= 1
-        newline()
+        if outer is "array"
+          small_break = yes
+        else
+          newline()
         data.map (item) ->
           append_item (indent + 1), item
       when "object"
