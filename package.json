@@ -1,0 +1,22 @@
+{
+  "name": "compact-json",
+  "version": "0.0.1",
+  "description": "Print JSON more compact",
+  "main": "compact.js",
+  "scripts": {
+    "test": "node-dev test.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jiyinyiyong/compact-json.git"
+  },
+  "keywords": [
+    "json",
+    "format"
+  ],
+  "author": "jiyinyiyong",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jiyinyiyong/compact-json/issues"
+  }
+}

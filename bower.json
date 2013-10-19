@@ -1,0 +1,22 @@
+{
+  "name": "compact-json",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jiyinyiyong/compact-json",
+  "authors": [
+    "jiyinyiyong <jiyinyiyong@gmail.com>"
+  ],
+  "description": "Print JSON more compact",
+  "main": "compact.js",
+  "keywords": [
+    "json",
+    "format"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
