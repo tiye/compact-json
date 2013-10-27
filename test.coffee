@@ -1,5 +1,5 @@
 
-{render} = require "./compact"
+{render} = require "./compact.coffee"
 
 data =
   string: 1

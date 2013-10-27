@@ -82,6 +82,14 @@ define (require, exports) ->
   {render} = require("../bower_components/compact-json/parser")
 ```
 
+### Options
+
+To avoid print too long content
+
+```
+render.hide = true
+```
+
 ### License
 
 BSD

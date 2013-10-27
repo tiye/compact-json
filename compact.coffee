@@ -33,7 +33,7 @@ render = (content) ->
 
   append = (value) ->
     res = str value
-    if res.length > 30
+    if render.hide and res.length > 30
       res = res[..10] + "...\"\t[too long]"
     write res
     newline()
