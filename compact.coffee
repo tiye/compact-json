@@ -63,7 +63,10 @@ render = (content) ->
         if outer is "object"
           indent -= 1
         if outer is "array"
-          small_break = yes
+          if data.length
+            small_break = yes
+          else
+            newline()
         else
           newline()
         data.map (item) ->
