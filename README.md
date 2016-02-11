@@ -64,24 +64,6 @@ data = {} # some data...
 console.log (render data)
 ```
 
-In browsers:
-
-```
-bower install --save compack-json
-```
-
-```
-data = {} # some data...
-console.log (compactJsonRender data)
-```
-
-or with RequireJS.
-
-```coffee
-define (require, exports) ->
-  {render} = require("../bower_components/compact-json/parser")
-```
-
 ### Options
 
 To avoid print too long content

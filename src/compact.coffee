@@ -1,7 +1,7 @@
 
 # string, array, json, number, else
 
-support_types = ["number", "string", "array", "object"]
+support_types = ["number", "string", "array", "object", 'null']
 
 str = (x) ->
   JSON.stringify x
