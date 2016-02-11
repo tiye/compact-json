@@ -9,7 +9,7 @@ data =
   string: 1
   list: [
     {a: 1, b: 2}
-    {a: 1, b: 2}
+    {a: 1, b: 2, c: null}
     {a: 1, b: 2, c: {d: 3}}
     {list: [
       1, 3, 4,
@@ -28,6 +28,7 @@ into:
     b: 2
   - a: 1
     b: 2
+    c: null
   - a: 1
     b: 2
     c:
@@ -43,18 +44,11 @@ into:
     - "string"
 ```
 
-### API
-
-```
-render :: Object -> String
-format_string = render data
-```
-
 ### Usage
 
 In Node:
 
-```
+```bash
 npm install --save compact-json
 ```
 
@@ -68,7 +62,7 @@ console.log (render data)
 
 To avoid print too long content
 
-```
+```coffee
 render.hide = true
 ```
 

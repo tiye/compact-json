@@ -4,7 +4,7 @@
   "description": "Print JSON more compact",
   "main": "./lib/compact.js",
   "scripts": {
-    "test": "node-dev test.coffee"
+    "test": "coffee test.coffee"
   },
   "repository": {
     "type": "git",
@@ -15,12 +15,12 @@
     "format"
   ],
   "author": "jiyinyiyong",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jiyinyiyong/compact-json/issues"
   },
   "devDependencies": {
-    "cirru-script": "^0.4.26",
+    "cirru-script": "0.5.2-1",
     "gulp": "^3.9.1",
     "gulp-coffee": "^2.3.1"
   }
